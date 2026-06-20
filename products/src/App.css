@@ -623,19 +623,139 @@ body {
 }
 
 /* ───────────────── RESPONSIVE ───────────────── */
-@media (max-width: 640px) {
-  .hero h2 {
-    font-size: 1.6rem;
+
+/* Tablet (max 768px) */
+@media (max-width: 768px) {
+  .header-inner {
+    padding: 12px 16px;
   }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .cart-btn {
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    padding: 36px 16px 24px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.92rem;
+  }
+
+  .main-content {
+    padding: 0 16px 40px;
+  }
+
   .controls {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
   }
+
+  .search-wrap {
+    width: 100%;
+  }
+
   .search-wrap input {
     width: 100%;
   }
+
   .product-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+  .cart-drawer {
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
+/* Mobile (max 480px) */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .categories {
+    gap: 6px;
+  }
+
+  .cat-btn {
+    padding: 7px 12px;
+    font-size: 0.78rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card-body {
+    padding: 10px;
+    gap: 4px;
+  }
+
+  .card-name {
+    font-size: 0.78rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .card-price {
+    font-size: 0.85rem;
+    font-weight: 800;
+  }
+
+  /* Fix cut-off Add to Cart button */
+  .card-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .add-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 7px 8px;
+    font-size: 0.72rem;
+  }
+
+  .cart-drawer {
+    width: 100vw;
+  }
+
+  .drawer-header h2 {
+    font-size: 0.95rem;
+  }
+
+  .ci-img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .ci-name {
+    font-size: 0.78rem;
+  }
+
+  .cart-total {
+    font-size: 0.92rem;
+  }
+
+  .checkout-btn {
+    padding: 11px;
+    font-size: 0.88rem;
   }
 }
