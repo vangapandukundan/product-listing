@@ -15,7 +15,7 @@ function App() {
   // load saved cart from localStorage once on first load
   useEffect(() => {
     try {
-      const savedCart = localStorage.getItem("shopzone_cart");
+      const savedCart = localStorage.getItem("Product Listing_cart");
       if (savedCart) {
         setCart(JSON.parse(savedCart));
       }
@@ -27,7 +27,7 @@ function App() {
 
   // keep localStorage in sync whenever cart changes
   useEffect(() => {
-    localStorage.setItem("shopzone_cart", JSON.stringify(cart));
+    localStorage.setItem("Product Listing_cart", JSON.stringify(cart));
   }, [cart]);
 
   // sanity check that products actually loaded
@@ -72,7 +72,7 @@ function App() {
     if (cart.length === 0) return;
     setCart([]);
     setIsCartOpen(false);
-    alert("Order placed successfully! Thank you for shopping with ShopZone.");
+    alert("Order placed successfully! Thank you for shopping with Product Listing.");
   }
 
   const cartCount = cart.reduce((sum, item) => sum + item.qty, 0);
