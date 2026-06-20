@@ -16,8 +16,7 @@ function ProductGrid({ products, cart, onAddToCart }) {
       {products.map((product, index) => {
         const alreadyInCart = cart.some((item) => item.id === product.id);
         return (
-          // staggering the fade-in animation slightly per card looks nicer
-          // than everything popping in at once
+          // staggering the fade-in animation slightly per card looks nicer than everything popping in at once
           <div
             key={product.id}
             className="card-enter"

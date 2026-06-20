@@ -50,14 +50,7 @@ export const products = [
     rating: 4.2,
     image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&q=80",
   },
-  {
-    id: 7,
-    name: "Women's Kurti Set",
-    category: "Fashion",
-    price: 1299,
-    rating: 4.3,
-    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=500&q=80",
-  },
+
   {
     id: 8,
     name: "Denim Jacket",

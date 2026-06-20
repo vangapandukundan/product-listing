@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-// single product card
-// handles its own image load error so a broken image doesn't break the layout
+// single product card handles its own image load error so a broken image doesn't break the layout
 function ProductCard({ product, isInCart, onAddToCart }) {
   const [imgFailed, setImgFailed] = useState(false);
 

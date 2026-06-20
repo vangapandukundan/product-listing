@@ -89,7 +89,7 @@ function App() {
       <main className="main-content">
         <div className="hero">
           <h2>Discover Products You'll Love</h2>
-          <p>Browse our curated collection across electronics, fashion, shoes and accessories</p>
+          <p>Browse our collection across electronics, fashion, shoes and accessories</p>
         </div>
 
         <div className="controls">

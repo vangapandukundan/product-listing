@@ -1,11 +1,10 @@
-// top navbar, logo on the left, cart button on the right
-// kept it sticky so it stays visible while scrolling through products
+// top navbar, logo on the left, cart button on the right kept it sticky so it stays visible while scrolling through products
 function Header({ cartCount, onCartClick }) {
   return (
     <header className="header">
       <div className="header-inner">
         <h1 className="logo">
-          Shop<span>Zone</span>
+          product <span>Listing</span>
         </h1>
 
         <button className="cart-btn" onClick={onCartClick}>
